@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "404ff3ff-5504-4fec-872a-4e88ed30f032",
+		"name": "Dedupee-Status-DMZ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "960177"
+	},
+	"item": [
+		{
+			"name": "UPI-Plain",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seq-no\": \"ICI45355394ff\",\r\n    \"channel-code\": \"MICICI\",\r\n    \"ori-seq-no\": \"ICI202311ss3269ss94ff\",\r\n    \"mobile\": \"7988000014\",\r\n    \"profile-id\": \"2996304\",\r\n    \"device-id\": \"400438400438400438400438\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uat-onprem-dmz-hybrid.icicibank.com/dedupee_status/upi",
+					"protocol": "https",
+					"host": [
+						"uat-onprem-dmz-hybrid",
+						"icicibank",
+						"com"
+					],
+					"path": [
+						"dedupee_status",
+						"upi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IMPS-Plain",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transRefNo\": \"Testinga2156\",\r\n    \"passCode\": \"447c4524c9074b8c97e3a3c40ca7458d\",\r\n    \"bcID\": \"IBCKer00055\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uat-onprem-dmz-hybrid.icicibank.com/dedupee_status/imps",
+					"protocol": "https",
+					"host": [
+						"uat-onprem-dmz-hybrid",
+						"icicibank",
+						"com"
+					],
+					"path": [
+						"dedupee_status",
+						"imps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NEFT-Plain",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AGGRID\": \"TXBCOMP0054\",\r\n    \"CORPID\": \"SESPRODUCT\",\r\n    \"USERID\": \"389018\",\r\n    \"URN\": \"1885e35c-6291-4791-bca6-5d93452e4870\",\r\n    \"UNIQUEID\": \"202401081032010\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uat-onprem-dmz-hybrid.icicibank.com/dedupee_status/neft",
+					"protocol": "https",
+					"host": [
+						"uat-onprem-dmz-hybrid",
+						"icicibank",
+						"com"
+					],
+					"path": [
+						"dedupee_status",
+						"neft"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RTGS-Plain",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AGGRID\": \"TXBCOMP0054\",\r\n    \"CORPID\": \"SESPRODUCT\",\r\n    \"USERID\": \"389018\",\r\n    \"URN\": \"1885e35c-6291-4791-bca6-5d93452e4870\",\r\n    \"UNIQUEID\": \"202401131220802\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uat-onprem-dmz-hybrid.icicibank.com/dedupee_status/rtgs",
+					"protocol": "https",
+					"host": [
+						"uat-onprem-dmz-hybrid",
+						"icicibank",
+						"com"
+					],
+					"path": [
+						"dedupee_status",
+						"rtgs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FT-Plain",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AGGRID\": \"TXBCOMP0054\",\r\n    \"CORPID\": \"SESPRODUCT\",\r\n    \"USERID\": \"389018\",\r\n    \"URN\": \"1885e35c-6291-4791-bca6-5d93452e4870\",\r\n    \"UNIQUEID\": \"20240108103584\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uat-onprem-dmz-hybrid.icicibank.com/dedupee_status/ft",
+					"protocol": "https",
+					"host": [
+						"uat-onprem-dmz-hybrid",
+						"icicibank",
+						"com"
+					],
+					"path": [
+						"dedupee_status",
+						"ft"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "iNeft",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aggrid\": \"AGGRID01\",\r\n    \"uniqueid\": \"NEFTb4iNNxn8yo36\",\r\n    \"date\": \"20230303\"\r\n}"
+				},
+				"url": {
+					"raw": "https://uat-onprem-dmz-hybrid.icicibank.com/dedupee_status/ineft",
+					"protocol": "https",
+					"host": [
+						"uat-onprem-dmz-hybrid",
+						"icicibank",
+						"com"
+					],
+					"path": [
+						"dedupee_status",
+						"ineft"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDIR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seq-no\": \"ICI45355394ff\",\r\n    \"channel-code\": \"MICICI\",\r\n    \"ori-seq-no\": \"ICI202311ss3269ss94ff\",\r\n    \"mobile\": \"7988000014\",\r\n    \"profile-id\": \"2996304\",\r\n    \"device-id\": \"400438400438400438400438\"\r\n}"
+				},
+				"url": {
+					"raw": "https://uat-onprem-dmz-hybrid.icicibank.com/dedupee_status/udir-upi",
+					"protocol": "https",
+					"host": [
+						"uat-onprem-dmz-hybrid",
+						"icicibank",
+						"com"
+					],
+					"path": [
+						"dedupee_status",
+						"udir-upi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
